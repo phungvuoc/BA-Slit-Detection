@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="LongMortiseTenonJoint" params="prefix">
+  <link name="Long_Mortise_Tenon_Joint_link">
+    <inertial>
+      <origin xyz="-0.34511 0.10147 0.053717" rpy="0 0 0" />
+      <mass value="10.387" />
+      <inertia ixx="0.034636" ixy="-0.0016985" ixz="-0.0013353" iyy="0.48099" iyz="0.00040264" izz="0.48354" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://processit_support/data/KogRob/LongMortiseTenonJoint/LongMortiseTenonJoint.STL"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://processit_support/data/KogRob/LongMortiseTenonJoint/LongMortiseTenonJoint.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="Long_Mortise_Tenon_Joint_link">
+    <material>Gazebo/Orange</material>
+    <turnGravityOff>true</turnGravityOff>
+  </gazebo>
+</robot>

@@ -1,0 +1,6 @@
+# This file contains parameters which are specific for slit detection
+# It inherits from the main config yaml and overwrites its parameters
+# in case of duplication
+
+#0.05
+DIST_WELDSEARCH: 0.05 # Distance for measurement motion [m]
